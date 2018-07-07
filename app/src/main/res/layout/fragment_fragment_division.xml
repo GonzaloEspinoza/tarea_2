@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDivision">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/edittextn2d"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="DIVISION"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="72dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <EditText
+                android:id="@+id/edittextn1d"
+                android:layout_width="333dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Numero 1"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="461dp" />
+
+            <EditText
+                android:id="@+id/edittextn2d"
+                android:layout_width="334dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:hint="Numero 2"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="464dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/textresdiv"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="378dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <Button
+                android:id="@+id/btndiv"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="0dp"
+
+                android:layout_marginEnd="0dp"
+                android:text="Dividir"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
